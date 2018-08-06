@@ -1,0 +1,12 @@
+#!/Users/ranshiro/intership/bin/python3.6
+# EASY-INSTALL-ENTRY-SCRIPT: 'Flask-Assistant==0.2.99','console_scripts','intents'
+__requires__ = 'Flask-Assistant==0.2.99'
+import re
+import sys
+from pkg_resources import load_entry_point
+
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw?|\.exe)?$', '', sys.argv[0])
+    sys.exit(
+        load_entry_point('Flask-Assistant==0.2.99', 'console_scripts', 'intents')()
+    )
